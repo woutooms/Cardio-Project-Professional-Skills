@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+body{
+    text-align: center;
+    font-family: Cabin, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+div{
+    border: 2px solid RGBA(238, 110, 115, 0.65);
+    width: 50%;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 15px;
+    border-radius: 0.8rem;
+    background-color: RGBA(238, 110, 115, 0.65);
+    color: white;
+}
+
+input{
+    border: 2px solid RGBA(238, 110, 115, 0.65);
+    background-color: RGBA(238, 110, 115, 0.65);
+    border-radius: 0.8rem;
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+}
+
+input:hover{
+    color: RGBA(238, 110, 115, 0.65);
+    background-color: white;
+
+}

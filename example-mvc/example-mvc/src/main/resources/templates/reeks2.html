@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/%22%3E">
+<head>
+    <meta http-equiv=" Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="img/style.css"  th:href="@{/img/style.css}"/>
+    <link rel="icon" type="img/gym" href="/img/gym.png">
+    <title>Oefeningen</title>
+</head>
+<body>
+    <form action="/submitroutine">
+        <h1>Cardio Kalender</h1>
+        <h2 th:text="'Day ' + ${day.getDay()}"></h2>
+
+        <div>
+            <p th:text="'Oefening 1 : ' + ${stapjes.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${stapjes.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${stapjes.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${stapjes.getUitlegOefening()}"></p>
+
+        </div>
+        <div>
+            <p th:text="'Oefening 2 : ' + ${beenstrekLinks.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${beenstrekLinks.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${beenstrekLinks.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${beenstrekLinks.getUitlegOefening()}"></p>
+
+        </div>
+        <div>
+            <p th:text="'Oefening 3 : ' + ${beenstrekRechts.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${beenstrekRechts.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${beenstrekRechts.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${beenstrekRechts.getUitlegOefening()}"></p>
+
+        </div>
+        <div>
+            <p th:text="'Oefening 4 : ' + ${plankLinksStrek.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${plankLinksStrek.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${plankLinksStrek.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${plankLinksStrek.getUitlegOefening()}"></p>
+
+        </div>
+        <div>
+            <p th:text="'Oefening 5 : ' + ${plankRechtsStrek.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${plankRechtsStrek.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${plankRechtsStrek.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${plankRechtsStrek.getUitlegOefening()}"></p>
+
+        </div>
+        <div>
+            <p th:text="'Oefening 6 : ' + ${plankLinksBeweeg.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${plankLinksBeweeg.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${plankLinksBeweeg.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${plankLinksBeweeg.getUitlegOefening()}"></p>
+
+        </div>
+        <div>
+            <p th:text="'Oefening 7 : ' + ${plankRechtsBeweeg.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${plankRechtsBeweeg.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${plankRechtsBeweeg.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${plankRechtsBeweeg.getUitlegOefening()}"></p>
+
+        </div>
+        <p>
+            <input type="submit" name="submit2" value="Klaar met de oefeningen.">
+        </p>
+    </form>
+
+</body>
+</html>

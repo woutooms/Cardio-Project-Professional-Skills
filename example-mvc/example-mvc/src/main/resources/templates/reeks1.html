@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/%22%3E">
+<head>
+    <meta http-equiv=" Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="img/style.css"  th:href="@{/img/style.css}"/>
+    <title>Oefeningen</title>
+    <link rel="icon" type="img/gym" href="/img/gym.png">
+
+</head>
+<body>
+    <form action="/submitroutine">
+        <h1>Cardio Kalender</h1>
+        <h2 th:text="'Day ' + ${day.getDay()}"></h2>
+
+        <div>
+            <p th:text="'Oefening 1 : ' + ${plank.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${plank.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${plank.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${plank.getUitlegOefening()}"></p>
+        </div>
+        <div>
+            <p th:text="'Oefening 2 : ' + ${brug.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${brug.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${brug.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${brug.getUitlegOefening()}"></p>
+
+        </div>
+        <div>
+            <p th:text="'Oefening 3 : ' + ${plattePlankLinks.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${plattePlankLinks.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${plattePlankLinks.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${plattePlankLinks.getUitlegOefening()}"></p>
+
+        </div>
+        <div>
+            <p th:text="'Oefening 4 : ' + ${plattePlankRechts.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${plattePlankRechts.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${plattePlankRechts.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${plattePlankRechts.getUitlegOefening()}"></p>
+
+        </div>
+        <div>
+            <p th:text="'Oefening 5 : ' + ${supermanLinks.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${supermanLinks.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${supermanLinks.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${supermanLinks.getUitlegOefening()}"></p>
+
+        </div>
+        <div>
+            <p th:text="'Oefening 6 : ' + ${supermanRechts.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${supermanRechts.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${supermanRechts.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${supermanRechts.getUitlegOefening()}"></p>
+
+        </div>
+        <div>
+            <p th:text="'Oefening 7 : ' + ${kattenrug.getNaamOefening()}"></p>
+            <p th:text="'Duur : ' + ${kattenrug.getTijdOefening()} + ' seconden'"></p>
+            <p th:text="'Herhalingen : ' + ${kattenrug.getHerhalingenOefening()}"></p>
+            <p th:text="'Uitleg : ' + ${kattenrug.getUitlegOefening()}"></p>
+
+        </div>
+        <p>
+            <input type="submit" name="submit1" value="Klaar met de oefeningen.">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/%22%3E">
+<head>
+    <meta http-equiv=" Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="img/style.css"  th:href="@{/img/style.css}"/>
+    <title>Done</title>
+    <link rel="icon" type="img/gym" href="/img/gym.png">
+
+</head>
+<body>
+    <form action="/nextday">
+
+        <h1 th:text="'Je bent klaar met dag ' + ${day.getDay() - 1}"></h1>
+        <p>
+            <input type="submit" name="submit3" value="Naar volgende dag gaan.">
+        </p>
+    </form>
+</body>
+</html>
